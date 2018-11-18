@@ -10,9 +10,9 @@
 
 context(AppInfo) ->
     Dir = rebar_app_info:dir(AppInfo),
-    Mappings = [{".erl", filename:join([Dir, "src"])}],
+    Mappings = [{".erl", filename:join([Dir, ""])}],
     #{src_dirs => ["src"],
-      include_dirs => [],
+      include_dirs => ["include"],
       src_ext => ".yrl",
       out_mappings => Mappings}.
 
